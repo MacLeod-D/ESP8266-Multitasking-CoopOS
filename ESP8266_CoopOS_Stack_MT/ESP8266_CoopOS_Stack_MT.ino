@@ -151,18 +151,9 @@ void setup() {
     pinMode(TASK_2_PIN, OUTPUT);
     pinMode(2, OUTPUT);               // LED
 
-    
-
     Serial.begin(500000);
-
-
-
-
-
-    
     delay(1000);
     for (int i=0;i<50; i++) Serial.println();
-
     Serial.println(F("=== CoopOS Esp8266 with StackChange  (C) 2019 Helmut Weber ===\n"));
 
     MySerial.setSerial( & Serial); // Redirect Serial
