@@ -88,6 +88,17 @@ Copy the subdir to your Arduino Sketch folder -no library.
 Images
 ------
 
+This is the ROOT output of the included WebServer:   
+
  ![Image1](./Image1.jpg?raw=true "HTTP output ROOT")
 
-    
+
+Here is the animated Canvas Graphics updated every 2 seconds:
+ 
+ ![Image2](./Image1.jpg?raw=true "HTTP output Canvas Graphis")
+ 
+ 
+Timing. The Interrupt goes on while sending HTTP-data.    
+The Scheduler is blocked.   
+
+ ![Image3](./Image1.jpg?raw=true "Timing")
