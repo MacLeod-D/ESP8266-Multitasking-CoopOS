@@ -197,8 +197,8 @@ void setup() {
 
 
     // ----------------------------------------------------- Connect HTTP
-    const char * ssid = "AndroidAP";
-    const char * password = "mrfb0903";
+    const char * ssid =     "......";
+    const char * password = "......";
 
     // Wait for connection
     while (WiFi.status() != WL_CONNECTED) {
