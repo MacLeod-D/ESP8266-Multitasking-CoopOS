@@ -9,7 +9,7 @@
 
               Here is a Version (Stack Change) for 
               
-                               Arduino Uno
+                               <b>Arduino Uno</b>
               
               with much more documentation concerning the basics of 
               cooperative multitasking:
