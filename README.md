@@ -95,10 +95,11 @@ This is the ROOT output of the included WebServer:
 
 Here is the animated Canvas Graphics updated every 2 seconds:
  
- ![Image2](./Image1.jpg?raw=true "HTTP output Canvas Graphis")
+ ![Image2](./Image2.jpg?raw=true "HTTP output Canvas Graphis")
  
  
 Timing. The Interrupt goes on while sending HTTP-data.    
 The Scheduler is blocked.   
 
- ![Image3](./Image1.jpg?raw=true "Timing")
+ ![Image3](./Image3.jpg?raw=true "Timing")
+ 
