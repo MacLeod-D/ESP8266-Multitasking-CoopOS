@@ -24,31 +24,31 @@
 
   CoopOS exists in 2 Versions:
 
-  1) The "pure" Version. It uses standard Ansi-C, is prozessor independent
-     and the fastest version. My prefered version.
-     But it has some drawbacks:
-     - taskBegin, taskEnd surrounding the while-loop
-     - all local variables must be static !
-     - some restrictions using taskSwitch in for-loop and switch/case
-     - taskSwitch only allowed in tasks, not in called functions.
+  1) The "pure" Version. It uses standard Ansi-C, is prozessor independent   
+     and the fastest version. My prefered version.   
+     But it has some drawbacks:   
+     - taskBegin, taskEnd surrounding the while-loop   
+     - all local variables must be static !   
+     - some restrictions using taskSwitch in for-loop and switch/case   
+     - taskSwitch only allowed in tasks, not in called functions.   
 
-  2) The "Trampolin" version. It saves and restores processor registers - so
-     it is processor depedent (using assembler code).
-     That's why it must be ported to each new processor - and why it's slower.
+  2) The "Trampolin" version. It saves and restores processor registers - so   
+     it is processor depedent (using assembler code).   
+     That's why it must be ported to each new processor - and why it's slower.   
      But it does not have the limitaions of 1)
 
   This is version 2) - I've been asked for it.
 
-  ESP8266 software (for Arduino IDE = NON RTOS SDK) contains the mysterious 
-  cont.h, cont.S - which are the base for multitasking.
+  ESP8266 software (for Arduino IDE = NON RTOS SDK) contains the mysterious    
+  cont.h, cont.S - which are the base for multitasking.   
   
-  But as far as I know nobody built a Scheduler around it until now.
+  But as far as I know nobody built a Scheduler around it until now.   
 
   This shows, how to do it.
 
   -----------------------------------------------------------------------
 
-  This is not a real program, but a template for your measurements.
+  This is not a real program, but a template for your own creative work.
 
   What it does:
 
@@ -65,11 +65,14 @@
   **3)** A buffer mechanism to handle serial output for **smooth buffered serial output with a task**.
 
   **4)** And **Interrupt-Routine** which is called every **20 microseconds**. This interrupt route is working
-  durig ip data transfer - while the scheduler may be blocked for some milliseconds.
+  durig ip data transfer - while the scheduler may be blocked for some milliseconds.   
+  IRQ may start tasks with highest priority.
 
   **5)** A **Debugger** which can be used with serial line. It stops the scheduler and is able to analyse
   the state of the program - and continue, where it was broken.
   **This Debugger may be extended to be used with a browser!**
+  
+  **6) Measuring time with a resolution of 12.5 NANOSECONDS is shown.**  
 
   
   I think it is a good template to start from - have fun with it.
@@ -82,5 +85,5 @@ Installation
 Copy the subdir to your Arduino Sketch folder -no library.
 
 
-  
 
+    
