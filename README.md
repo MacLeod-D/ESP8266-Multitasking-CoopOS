@@ -11,7 +11,7 @@
               
                                Arduino Uno
               
-              with much more documentation concernning the basics of 
+              with much more documentation concerning the basics of 
               cooperative multitasking:
               
               https://github.com/MacLeod-D/Arduino-Multitasking-CoopOS
@@ -72,9 +72,4 @@
 
 
   
-  
-  
-   
- 
- ********************************************************************/
 
