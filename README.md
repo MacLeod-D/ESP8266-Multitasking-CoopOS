@@ -73,6 +73,13 @@
 
   
   I think it is a good template to start from - have fun with it.
+  
+  
+Installation
+------------
+
+
+Copy the subdir to your Arduino Sketch folder -no library.
 
 
   
