@@ -7,12 +7,14 @@
 
   -----------------------------------------------------------------------
 
-              Here is a Version (Stack Change) for 
+              Reference: Here is a Version (Stack Change) for 
+                               _________________
               
-                               <b>Arduino Uno</b>
+                               ** Arduino Uno **
+                               _________________
               
               with much more documentation concerning the basics of 
-              cooperative multitasking:
+              cooperative multitasking with CoopOS
               
               https://github.com/MacLeod-D/Arduino-Multitasking-CoopOS
 
