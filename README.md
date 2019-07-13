@@ -56,19 +56,21 @@
   The Scheduler calls (inited) tasks. They do a little bit and return cooperative to
   the Scheduler. The Scheduler decides, which task (time, priority) has to be called next 
   and call that task . and so on.
+  It is possible to init new tasks while the Scheduler is running !
+  
   Here the  Esp8266 (160 MHz) does up to 85000 TaskSwitches/s !
 
   **2) WebServer**
   A WebServer is included. It shows (ip.address/) a list of all tasks with last called time
   and with (ip.address/gr) an animated canvas graphics which is automatically updated each 2 s.
 
-  **3)** A buffer mechanism to handle serial output for **smooth buffered serial output with a task**.
+  **3)** A buffer mechanism to handle serial output for **smooth buffered serial output using a task**.
 
-  **4)** And **Interrupt-Routine** which is called every **20 microseconds**. This interrupt route is working
-  durig ip data transfer - while the scheduler may be blocked for some milliseconds.   
-  IRQ may start tasks with highest priority.
+  **4)** An **Interrupt-Routine** which is called every **20 microseconds**. This interrupt routine is working
+  during ip data transfer - while the scheduler may be blocked for some milliseconds.   
+  IRQ may start tasks with highest priority. They run after the HTTP-sendOn... has finished.
 
-  **5)** A **Debugger** which can be used with serial line. It stops the scheduler and is able to analyse
+  **5)** A **Debugger** which can be used with serial line. It stops the scheduler and is able to analyze
   the state of the program - and continue, where it was broken.
   **This Debugger may be extended to be used with a browser!**
   
