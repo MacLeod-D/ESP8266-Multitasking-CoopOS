@@ -77,7 +77,7 @@
   **6) Measuring time with a resolution of 12.5 NANOSECONDS is shown.**  
 
   
-  I think it is a good template to start from - have fun with it.
+  I think it is a good template to start with - have fun with it.
   
   
 Installation
